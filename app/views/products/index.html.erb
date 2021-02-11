@@ -2,6 +2,9 @@
 
 <ul>
 <% @products.each do |product| %>
-  <li><%= link_to product.title, product %></li>
+  <p>
+    <li>Product: <%= link_to product.title, product %> <br> Category: <%= product.category.name %></li>
+  </p>
+  <hr>
 <% end %>
 </ul>
